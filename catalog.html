@@ -19,10 +19,56 @@
       </nav>
     </header>
     <main>
-      <h1 class="visually-hidden">Каталог гостиниц: звёзды, рейтинг, бронирование</h1>
-      <!-- Здесь будет форма -->
+      <h1 class="visually-hidden">Каталог гостиниц: бронирование, звёзды, рейтинг</h1>
+      <h2 class="visually-hidden">Форма поиска гостиницы</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="pool" id="pool" checked>
+              <label for="pool">Бассейн</label>
+            </li>
+            <li>
+              <input type="checkbox" name="parking" id="parking">
+              <label for="parking">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" name="wi-fi" id="wi-fi">
+              <label for="wi-fi">WI-FI</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="hotel" id="hotel" checked>
+              <label for="hotel">Гостиница</label>
+            </li>
+            <li>
+              <input type="checkbox" name="motel" id="motel" checked>
+              <label for="motel">Мотель</label>
+            </li>
+            <li>
+              <input type="checkbox" name="apartments" id="apartments" checked>
+              <label for="apartments">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки (Р):</legend>
+          <input type="text" value="от 0" name="min">
+          <input type="text" value="до 3000" name="max">
+          <div class="range-track">
+            <div class="range-pin range-pin-min"></div>
+            <div class="range-pin range-pin-max"></div>
+          </div>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
       <section>
-        <h2>Поиск гостиниц</h2>
+        <h2 class="visually-hidden">Сортировка результатов поиска</h2>
         <p>Найдено: 3</p>
         <p>Сортировка:</p>
         <ul>
