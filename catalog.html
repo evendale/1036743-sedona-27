@@ -58,9 +58,12 @@
         </fieldset>
         <fieldset>
           <legend>Стоимость в сутки (Р):</legend>
-          <input type="text" value="от 0" name="min">
-          <input type="text" value="до 3000" name="max">
+          <label for="min">От</label>
+          <input type="text" value="0" name="min" id="min">
+          <label for="max">До</label>
+          <input type="text" value="3000" name="max" id="max">
           <div class="range-track">
+            <div class="range-track-inner"></div>
             <div class="range-pin range-pin-min"></div>
             <div class="range-pin range-pin-max"></div>
           </div>
