@@ -1,0 +1,379 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: black;
+  background-color: #f2f2f2;
+}
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+fieldset {
+  border: none;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  url('../fonts/pt-sans-v11-cyrillic_latin-regular.woff2') format('woff2'),
+  url('../fonts/pt-sans-v11-cyrillic_latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  url('../fonts/pt-sans-v11-cyrillic_latin-700.woff2') format('woff2'),
+  url('../fonts/pt-sans-v11-cyrillic_latin-700.woff') format('woff');
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  background-color: #ffffff;
+}
+
+.header-menu li {
+  list-style: none;
+}
+
+.header-menu a {
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+}
+
+.header-menu a:hover {
+  color: #81b3d2;
+}
+
+.header-menu a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-intro {
+  background-image:
+    url("../img/main-intro-polygon.svg"),
+    url("../img/main-intro-bg.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom center, top center;
+}
+
+.advantages-title {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.24;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages p {
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages h2,
+.advantages h3 {
+  font-size: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages li {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.reservation h2 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-blue {
+  color: white;
+  background: #81b3d2;
+}
+
+.advantages-gray {
+  background-color: #eeeeee;
+}
+
+.reservation p {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.71;
+}
+
+.reservation-form legend {
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #766357;
+  color: white;
+}
+
+.reservation-form legend:hover {
+  background-color: #604e43;
+}
+
+.reservation-form legend:active {
+  background-color: #503e33;
+}
+
+.reservation-form label {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.reservation-form input[type="text"] {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.reservation-form input[type="text"]:hover {
+  background-color: #ebebeb;
+}
+
+.reservation-form input[type="text"]:focus {
+  background-color: white;
+}
+
+.reservation-form button[type="submit"] {
+  font-size: 21px;
+  text-transform: uppercase;
+  color: white;
+  background-color:#81b3d2;
+  border: none;
+}
+
+.reservation-form button[type="submit"]:hover {
+  background-color: #669ec0;
+}
+
+.reservation-form button[type="submit"]:active {
+  background-color: #5496bd;
+}
+
+.reservation-form input[value] {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.reservation-form input[name="adults"],
+.reservation-form input[name="children"] {
+  font-weight: bold;
+  text-align: center;
+}
+
+.reservation-form-number-minus,
+.reservation-form-number-plus {
+  font-size: 16px;
+  font-weight: bold;
+  color: #a9a9a9;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.reservation-form-number-minus:hover,
+.reservation-form-number-plus:hover {
+  color: #000000;
+}
+
+.reservation-form-number-minus:active,
+.reservation-form-number-plus:active {
+  color: #81b3d2;
+}
+
+.catalog-filter-wrapper {
+  background-image: url("../img/catalog-filter-bg.jpg");
+  background-repeat: no-repeat;
+}
+
+.catalog-filter-form legend {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.catalog-filter-form li {
+  list-style: none;
+}
+
+.catalog-filter-form label {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.catalog-filter-form button[type="submit"] {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.catalog-sorting-found {
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.catalog-sorting p,
+.catalog-sorting li {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.catalog-sorting li {
+  list-style: none;
+}
+
+.catalog-sorting a {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.catalog-sorting a:hover {
+  color: #81b3d2;
+}
+
+.catalog-sorting a:active {
+  color: #000000;
+  border: none;
+}
+
+.catalog-sorting .catalog-sorting-active {
+  color: #81b3d2;
+  border-bottom: none;
+}
+
+.catalog-hotels h3 {
+  font-size: 21px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-hotels h3:hover {
+  color: #81b3d2;
+}
+
+.catalog-hotels h3:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-hotels span {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.catalog-hotels-btn {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.catalog-hotels-btn-details {
+  display: inline-block;
+  width: 110px;
+  height: 27px;
+  background-color: #81b3d2;;
+}
+
+.catalog-hotels-btn-details:hover {
+  background-color: #669ec0;
+}
+
+.catalog-hotels-btn-details:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.catalog-hotels-btn-reservation {
+  display: inline-block;
+  width: 142px;
+  height: 27px;
+  background-color: #766357;
+}
+
+.catalog-hotels-btn-reservation:hover {
+  background-color: #604e43;
+}
+
+.catalog-hotels-btn-reservation:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.catalog-hotels-rating {
+  color: #666666;
+}
+
+.catalog-hotels li {
+  list-style: none;
+}
+
+.footer-hashtag,
+.footer-tel {
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+.footer a {
+  color: black;
+}
+
+.footer-social {
+  list-style: none;
+}
+
+.footer .logo-htmla {
+  text-transform: uppercase;
+}
+
+.footer svg {
+  width: 115px;
+  height: 41px;
+}
+
+.footer .logo-htmla svg:hover {
+  fill: #81b3d2;
+}
+
+.footer .logo-htmla svg:active {
+  fill: #bdbbbc;
+}
