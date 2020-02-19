@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+url('../fonts/pt-sans-v11-cyrillic_latin-regular.woff2') format('woff2'),
+url('../fonts/pt-sans-v11-cyrillic_latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+url('../fonts/pt-sans-v11-cyrillic_latin-700.woff2') format('woff2'),
+url('../fonts/pt-sans-v11-cyrillic_latin-700.woff') format('woff');
+}
+
 html {
   box-sizing: border-box;
 }
@@ -17,7 +33,6 @@ body {
   color: black;
   background-color: #f2f2f2;
 }
-}
 
 img {
   max-width: 100%;
@@ -26,26 +41,6 @@ img {
 
 a {
   text-decoration: none;
-}
-
-fieldset {
-  border: none;
-}
-
-@font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
-  url('../fonts/pt-sans-v11-cyrillic_latin-regular.woff2') format('woff2'),
-  url('../fonts/pt-sans-v11-cyrillic_latin-regular.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
-  url('../fonts/pt-sans-v11-cyrillic_latin-700.woff2') format('woff2'),
-  url('../fonts/pt-sans-v11-cyrillic_latin-700.woff') format('woff');
 }
 
 .visually-hidden {
@@ -136,20 +131,21 @@ fieldset {
   line-height: 1.71;
 }
 
-.reservation-form legend {
+.reservation-form-btn {
   font-size: 21px;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   background-color: #766357;
   color: white;
+  border: none;
 }
 
-.reservation-form legend:hover {
+.reservation-form-btn:hover {
   background-color: #604e43;
 }
 
-.reservation-form legend:active {
+.reservation-form-btn:active {
   background-color: #503e33;
 }
 
@@ -187,19 +183,17 @@ fieldset {
   background-color: #5496bd;
 }
 
-.reservation-form input[value] {
+.reservation-form-value {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-.reservation-form input[name="adults"],
-.reservation-form input[name="children"] {
+.reservation-form-numbers {
   font-weight: bold;
   text-align: center;
 }
 
-.reservation-form-number-minus,
-.reservation-form-number-plus {
+.reservation-form-number-btn {
   font-size: 16px;
   font-weight: bold;
   color: #a9a9a9;
@@ -207,19 +201,25 @@ fieldset {
   background-color: #f2f2f2;
 }
 
-.reservation-form-number-minus:hover,
-.reservation-form-number-plus:hover {
+.reservation-form-number-btn:hover {
   color: #000000;
 }
 
-.reservation-form-number-minus:active,
-.reservation-form-number-plus:active {
+.reservation-form-number-btn:active {
   color: #81b3d2;
 }
 
-.catalog-filter-wrapper {
+.reservation-form fieldset {
+  border: none;
+}
+
+.catalog-filter-form {
   background-image: url("../img/catalog-filter-bg.jpg");
   background-repeat: no-repeat;
+}
+
+.catalog-filter-form fieldset {
+  border: none;
 }
 
 .catalog-filter-form legend {
@@ -361,19 +361,19 @@ fieldset {
   list-style: none;
 }
 
-.footer .logo-htmla {
+.logo-htmla {
   text-transform: uppercase;
 }
 
-.footer svg {
+.logo-htmla svg {
   width: 115px;
   height: 41px;
 }
 
-.footer .logo-htmla svg:hover {
+.logo-htmla:hover svg {
   fill: #81b3d2;
 }
 
-.footer .logo-htmla svg:active {
+.logo-htmla:active svg {
   fill: #bdbbbc;
 }
