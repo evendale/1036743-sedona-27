@@ -1,0 +1,9 @@
+.header,
+.container,
+.main-intro,
+.advantages,
+.reservation,
+.map,
+.footer {
+  outline: 1px solid red;
+}
